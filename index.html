@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>West Sussex Tree Specialists | Tree surgeons in Horsham and West Sussex</title>
+<meta name="description" content="Professional tree surgeons based in Horsham, serving West Sussex. Tree removal, crown reduction, hedge cutting, stump grinding and emergency call-outs. NPTC qualified, CHAS approved, fully insured.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FFFDE3;--black:#010101;--green:#2F5D3A;--orange:#F26B21;--bark:#6B4A2B;--bg:var(--cream);--text:var(--black);--card:#fff;--line:rgba(107,74,43,.35);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10150f;--text:#FFFDE3;--card:#1a2118;--line:rgba(255,253,227,.25)}}
+:root[data-theme="dark"]{--bg:#10150f;--text:#FFFDE3;--card:#1a2118;--line:rgba(255,253,227,.25)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Fredoka,"Trebuchet MS",system-ui,sans-serif;font-weight:500;line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:var(--cream);color:var(--black);border-bottom:2px solid var(--black)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+header img{height:56px;width:auto;display:block}
+nav{display:flex;align-items:center;gap:6px 20px;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:500;font-size:16px;padding:6px 0}
+nav a:hover{text-decoration:underline}
+.wa{display:inline-flex;width:42px;height:42px;border-radius:50%;background:var(--green);align-items:center;justify-content:center}
+.wa svg{width:24px;height:24px}
+.hero,footer{position:relative;overflow:hidden;background:var(--green);color:var(--cream)}
+.rings{position:absolute;right:-140px;top:50%;width:640px;height:640px;transform:translateY(-50%);color:var(--cream);opacity:.16;pointer-events:none}
+.rings.left{right:auto;left:-180px}
+.hero .wrap{position:relative;padding-top:64px;padding-bottom:64px}
+.hero h1{font-size:clamp(34px,6vw,56px);max-width:15ch}
+.hero p{font-size:19px;margin:14px 0 28px;max-width:34ch}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-family:Fredoka,system-ui,sans-serif;font-weight:500;font-size:19px;padding:13px 24px;border-radius:10px;border:2px solid transparent;cursor:pointer}
+.btn.call{background:var(--orange);color:var(--black)}
+.btn.quote{background:var(--cream);color:var(--black)}
+.btn:hover{filter:brightness(1.07)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.badges{border-bottom:1px solid var(--line)}
+.badges ul{list-style:none;margin:0;padding:18px 0;display:flex;gap:10px 14px;flex-wrap:wrap;justify-content:center}
+.badges li{border:1.5px solid var(--bark);border-radius:10px;padding:7px 14px;font-weight:500;font-size:15px;background:var(--card)}
+section{padding:60px 0}
+section h2{font-size:clamp(28px,4vw,38px);margin-bottom:16px}
+.about p{max-width:62ch;margin:0 0 14px}
+.about .tag{color:var(--bark);font-weight:500}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .about .tag{color:#d9b48a}}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin-top:22px}
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:18px 20px}
+.card h3{font-size:21px;margin-bottom:6px}
+.card p{margin:0;font-size:16px}
+.card.urgent{border-color:var(--orange);border-width:2px}
+.reviews .stars{font-family:Fredoka,system-ui,sans-serif;font-size:22px;margin-bottom:6px}
+.reviews .stars b{color:var(--orange);letter-spacing:2px;font-weight:500}
+.note{border:2px dashed var(--line);border-radius:12px;padding:20px;max-width:62ch}
+.areas ul{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.areas li{border:1.5px solid var(--line);border-radius:999px;padding:5px 14px;font-size:15px;background:var(--card)}
+.contact{background:var(--card);border-top:1px solid var(--line)}
+.contact .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;margin-top:8px}
+.contact .big{display:flex;align-items:center;gap:12px;font-family:Fredoka,system-ui,sans-serif;font-size:24px;text-decoration:none;margin-bottom:12px}
+.contact .big svg{width:26px;height:26px;flex:none}
+label{display:block;font-weight:500;margin:0 0 4px}
+input,textarea{width:100%;font:inherit;color:var(--text);background:var(--bg);border:1.5px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:14px}
+textarea{min-height:110px;resize:vertical}
+form small{display:block;margin-top:10px;color:inherit;opacity:.75;font-size:14px}
+footer .wrap{position:relative;padding-top:36px;padding-bottom:36px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer p{margin:0;font-size:15px}
+footer a{font-weight:500}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (max-width:560px){header img{height:46px}section{padding:44px 0}.hero .wrap{padding-top:44px;padding-bottom:44px}.rings{right:-260px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a href="#top" aria-label="West Sussex Tree Specialists home"><img src="logo.png" alt="West Sussex Tree Specialists. All things trees." width="640" height="222"></a>
+    <nav aria-label="Main">
+      <a href="#top">Home</a>
+      <a href="#services">Services</a>
+      <a href="#areas">Areas</a>
+      <a href="#contact">Get in touch</a>
+      <a class="wa" href="https://wa.me/447719724463" aria-label="Message us on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="#FFFDE3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-.9.8c-1-.4-2-1.4-2.4-2.4l.8-.9-1-2z"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <svg class="rings" viewBox="-300 -300 600 600" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"></svg>
+  <div class="wrap">
+    <h1>Professional tree surgeons in Sussex</h1>
+    <p>Based in Horsham, serving West Sussex. Safe, tidy tree work from a fully insured local team.</p>
+    <div class="btns">
+      <a class="btn call" href="tel:07719724463">Call Max on 07719 724463</a>
+      <a class="btn quote" href="#contact">Get a free quote</a>
+    </div>
+  </div>
+</div>
+
+<div class="badges">
+  <div class="wrap">
+    <ul>
+      <li>NPTC qualified</li>
+      <li>CHAS approved</li>
+      <li>£10m public liability</li>
+      <li>5-star rated on Google</li>
+    </ul>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <h2>Hi, I'm Max</h2>
+    <p>I've worked in the tree industry for over seven years. I trained at Merrist Wood College near Guildford, where I earned my Level 3 in agriculture and forestry, then set up West Sussex Tree Specialists in 2026.</p>
+    <p>We're a young, family-run business with plenty of hands-on experience, fully insured and properly qualified. Whether it's one garden tree or a woodland that needs managing, you'll get a straight quote and a tidy finish.</p>
+    <p class="tag">All things trees.</p>
+  </div>
+</section>
+
+<section id="services" style="padding-top:0">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <div class="grid">
+      <div class="card"><h3>Tree removal</h3><p>Safe felling and sectional dismantling, even in tight gardens.</p></div>
+      <div class="card"><h3>Crown reduction and pruning</h3><p>Shape, thin and lift trees to let in light and keep them healthy.</p></div>
+      <div class="card"><h3>Hedge cutting</h3><p>Neat, regular trimming for hedges of any size.</p></div>
+      <div class="card"><h3>Stump grinding</h3><p>Stumps ground out so you can replant or reclaim the space.</p></div>
+      <div class="card"><h3>Site clearance</h3><p>Clearing overgrown plots and land ready for the next stage.</p></div>
+      <div class="card"><h3>Woodland management</h3><p>Thinning, coppicing and care for larger woodland areas.</p></div>
+      <div class="card urgent"><h3>Emergency call-outs</h3><p>Storm damage or a dangerous tree? Call Max straight away.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <h2>What customers say</h2>
+    <div class="stars"><b>★★★★★</b> 5.0 on Google</div>
+    <div class="note">Placeholder: your real Google reviews will go here. Once a few more customers have left a review, we'll copy the best ones in word for word.</div>
+  </div>
+</section>
+
+<section class="areas" id="areas" style="padding-top:0">
+  <div class="wrap">
+    <h2>Based in Horsham, proudly serving tree surgery across West Sussex</h2>
+    <ul>
+      <li>Horsham</li><li>Broadbridge Heath</li><li>Christ's Hospital</li><li>Southwater</li><li>Mannings Heath</li><li>Lower Beeding</li><li>Nuthurst</li><li>Maplehurst</li><li>Cowfold</li><li>Bolney</li><li>Henfield</li><li>Partridge Green</li><li>Barns Green</li><li>Billingshurst</li><li>Storrington</li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <div class="cols">
+      <div>
+        <a class="big" href="tel:07719724463"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>07719 724463</a>
+        <a class="big" href="mailto:westsussextrees@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>westsussextrees@gmail.com</a>
+        <a class="big" href="https://wa.me/447719724463"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-.9.8c-1-.4-2-1.4-2.4-2.4l.8-.9-1-2z"/></svg>Message on WhatsApp</a>
+        <p>Send a photo of the tree on WhatsApp and we can often give you a rough idea of cost the same day.</p>
+      </div>
+      <form id="enquiry">
+        <label for="n">Your name</label><input id="n" name="n" autocomplete="name" required>
+        <label for="p">Phone number</label><input id="p" name="p" type="tel" autocomplete="tel">
+        <label for="m">What do you need doing?</label><textarea id="m" name="m" required></textarea>
+        <button class="btn call" type="submit">Send enquiry</button>
+        <small>This opens your email app with the message ready to send.</small>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <svg class="rings left" viewBox="-300 -300 600 600" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"></svg>
+  <div class="wrap">
+    <p>&copy; 2026 West Sussex Tree Specialists. Mannings Heath, Horsham.</p>
+    <p><a href="tel:07719724463">07719 724463</a> &middot; <a href="mailto:westsussextrees@gmail.com">westsussextrees@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.rings').forEach(function(svg,k){
+  var out='';
+  for(var i=1;i<=17;i++){
+    var r=i*16,s=i*0.7+k*2,d='';
+    for(var a=0;a<=96;a++){
+      var t=a/96*Math.PI*2;
+      var rr=r*(1+0.05*Math.sin(2*t+s)+0.025*Math.sin(5*t+s*1.7)+0.012*Math.sin(9*t+s*0.5));
+      d+=(a?'L':'M')+(rr*Math.cos(t)*1.08).toFixed(1)+' '+(rr*Math.sin(t)).toFixed(1);
+    }
+    out+='<path d="'+d+'Z"/>';
+  }
+  svg.innerHTML=out;
+});
+document.getElementById('enquiry').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target;
+  var body='Name: '+f.n.value+'\nPhone: '+f.p.value+'\n\n'+f.m.value;
+  location.href='mailto:westsussextrees@gmail.com?subject='+encodeURIComponent('Website enquiry from '+f.n.value)+'&body='+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
