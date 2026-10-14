@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Email signature | West Sussex Tree Specialists</title>
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.sigpage{padding:40px 0 60px}
+.sigbox{background:#FFFDE3;border:1.5px solid rgba(107,74,43,.35);border-radius:12px;padding:24px;margin:22px 0;overflow-x:auto}
+.sigpage ol{padding-left:22px;max-width:68ch}
+.sigpage li{margin-bottom:8px}
+#copied{margin-left:12px;font-weight:600}
+</style>
+</head>
+<body>
+<main class="sigpage"><div class="wrap">
+  <h1 style="font-size:clamp(28px,4vw,38px);margin-bottom:10px">Your email signature</h1>
+  <p class="lead">This page is just for you and isn't linked anywhere on the website. Copy the signature below and paste it into Gmail.</p>
+
+  <div class="sigbox"><div id="sig">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="background-color:#FFFDE3;border-collapse:separate;border-radius:10px"><tr><td style="padding:14px 18px"><table role="presentation" cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.45;color:#222222;border-collapse:collapse">
+      <tr>
+        <td style="padding:0 16px 0 0;vertical-align:top"><img src="apple-touch-icon.png" width="84" height="84" alt="West Sussex Tree Specialists logo" style="display:block;border:0;width:84px;height:84px"></td>
+        <td style="padding:0 0 0 16px;border-left:3px solid #F26B21;vertical-align:top">
+          <div style="font-size:19px;font-weight:bold;color:#2F5D3A;line-height:1.2">Max</div>
+          <div style="color:#555555;padding-bottom:7px">Tree Surgeon &middot; West Sussex Tree Specialists</div>
+          <div><span style="color:#2F5D3A;font-weight:bold">M</span>&nbsp; <a href="tel:07719724463" style="color:#222222;text-decoration:none">07719 724463</a></div>
+          <div><span style="color:#2F5D3A;font-weight:bold">E</span>&nbsp; <a href="mailto:westsussextrees@gmail.com" style="color:#222222;text-decoration:none">westsussextrees@gmail.com</a></div>
+          <div><span style="color:#2F5D3A;font-weight:bold">W</span>&nbsp; <a class="sig-site" href="#" style="color:#2F5D3A;text-decoration:none;font-weight:bold">yourwebsite.co.uk</a></div>
+          <div style="padding-top:8px;font-size:12px;color:#555555">NPTC qualified &middot; &pound;10m public liability insurance &middot; 5-star rated on Google</div>
+          <div style="padding-top:2px;font-size:12px;color:#555555">Covering Horsham and all of West Sussex</div>
+          <div style="padding-top:10px"><a class="sig-quote" href="#" style="background-color:#F26B21;color:#010101;font-weight:bold;font-size:13px;text-decoration:none;padding:7px 14px;border-radius:6px;display:inline-block">Get a free quote</a></div>
+        </td>
+      </tr>
+    </table>
+    </td></tr></table>
+  </div></div>
+
+  <p><button class="btn call" id="copy" type="button">Copy signature</button><span id="copied" role="status" aria-live="polite"></span></p>
+
+  <h2 style="font-size:24px;margin:30px 0 10px">Adding it to Gmail</h2>
+  <ol>
+    <li>Press <b>Copy signature</b> above.</li>
+    <li>In Gmail, click the cog (top right), then <b>See all settings</b>.</li>
+    <li>On the <b>General</b> tab, scroll to <b>Signature</b> and click <b>Create new</b>. Give it a name such as "Max".</li>
+    <li>Click inside the signature box and paste (Ctrl+V, or Cmd+V on a Mac).</li>
+    <li>Under <b>Signature defaults</b>, choose it for both new emails and replies.</li>
+    <li>Scroll to the bottom and click <b>Save changes</b>.</li>
+  </ol>
+  <p class="hint">The Gmail phone app only supports a plain-text signature, so on your phone use: Max, Tree Surgeon, West Sussex Tree Specialists, 07719 724463.</p>
+</div></main>
+<script>
+(function(){
+  var host=location.host.replace(/^www\./,'');
+  var live=host&&location.protocol.indexOf('http')===0&&!/claude|localhost|127\.0\.0\.1/.test(host);
+  document.querySelectorAll('.sig-site').forEach(function(a){if(live){a.href=location.origin+'/';a.textContent=host}});
+  document.querySelectorAll('.sig-quote').forEach(function(a){if(live){a.href=location.origin+'/#contact'}});
+  var msg=document.getElementById('copied');
+  document.getElementById('copy').addEventListener('click',function(){
+    var el=document.getElementById('sig'),r=document.createRange();r.selectNode(el);
+    var s=window.getSelection();s.removeAllRanges();s.addRange(r);
+    var ok=false;try{ok=document.execCommand('copy')}catch(e){}
+    msg.textContent=ok?'Copied. Now paste it into Gmail.':'Selected. Press Ctrl+C (Cmd+C on a Mac) to copy it.';
+  });
+})();
+</script>
+</body>
+</html>
